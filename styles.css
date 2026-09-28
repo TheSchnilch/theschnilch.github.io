@@ -139,28 +139,6 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
 
 /* ---------- Hero ---------- */
 .hero { padding: 88px 0 62px; }
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  background: var(--brand-soft);
-  color: var(--brand);
-  border: 1px solid rgba(29, 78, 216, 0.14);
-  font-size: 0.76rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 6px 14px;
-  border-radius: 999px;
-  margin-bottom: 26px;
-}
-.eyebrow::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--brand);
-}
 .hero h1 {
   font-size: clamp(2.2rem, 5.4vw, 3.5rem);
   font-weight: 750;

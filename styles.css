@@ -14,8 +14,6 @@
   --brand-soft: #eef3ff;
   --brand-softer: #f5f8ff;
   --brand-ring: rgba(29, 78, 216, 0.16);
-  --gold: #a1620a;
-  --gold-soft: #fdf6e7;
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
   --shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 8px 24px -14px rgba(15, 23, 42, 0.12);
   --shadow-lg: 0 2px 6px rgba(15, 23, 42, 0.05), 0 20px 44px -22px rgba(15, 23, 42, 0.22);
@@ -296,13 +294,6 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
   color: var(--text);
   font-variant-numeric: tabular-nums;
 }
-.rank-top {
-  color: var(--gold);
-  background: var(--gold-soft);
-  border: 1px solid rgba(161, 98, 10, 0.18);
-  padding: 2px 9px;
-  border-radius: 999px;
-}
 .contests a {
   color: var(--text-muted);
   text-decoration: none;
@@ -390,7 +381,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
 .stats + .section { border-top: none; }
 
 /* ---------- Bug bounties ---------- */
-.bounty-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.bounty-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px; }
 .bounty-card {
   margin: 0;
   border: 1px solid var(--border);
@@ -416,7 +407,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
 .bounty-note a:hover { border-bottom-color: var(--brand); }
 
 /* ---------- Projects ---------- */
-.project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; }
 .project-card {
   display: flex;
   gap: 18px;

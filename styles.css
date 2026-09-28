@@ -381,7 +381,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
 .stats + .section { border-top: none; }
 
 /* ---------- Bug bounties ---------- */
-.bounty-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px; }
+.bounty-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 .bounty-card {
   margin: 0;
   border: 1px solid var(--border);
